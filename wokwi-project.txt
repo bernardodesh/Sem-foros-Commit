@@ -1,3 +1,28 @@
 Downloaded from https://wokwi.com/projects/458963109359320065
+*/
+#define vermelho 13
+#define amarelo 12
+#define verde 8
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  
+  pinMode(verde, OUTPUT);
+  pinMode(amarelo, OUTPUT);
+  pinMode(vermelho, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(verde, HIGH);
+  delay(10000);
+  digitalWrite(verde, LOW);
+  digitalWrite(amarelo, HIGH);
+  delay(2000);
+  digitalWrite(amarelo, LOW);
+  digitalWrite(vermelho, HIGH);
+  delay(10000);
+  digitalWrite(vermelho, LOW); 
+}          
 
 Simulate this project on https://wokwi.com
